@@ -24,6 +24,7 @@ if [ -z "$PROJECT_ROOT" ]; then
     exit 1
 fi
 
+
 # 输出当前配置
 echo "当前配置:"
 echo "PROJECT_ROOT: $PROJECT_ROOT"
