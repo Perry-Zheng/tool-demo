@@ -3,8 +3,8 @@ LANGUAGES = {
     "zh": {
         "name": "简体中文",
         "flag": "🇨🇳",
-        "site_name": "浪漫情侣网站",
-        "site_description": "一个专为情侣设计的浪漫网站",
+        "site_name": "我们的网站",
+        "site_description": "一个专为咱们设计的网站",
         "features": {
             "title": "浪漫特性",
             "fast": {"title": "快速可靠", "desc": "采用现代技术栈，提供闪电般的性能"},
@@ -31,8 +31,8 @@ LANGUAGES = {
     "en": {
         "name": "English",
         "flag": "🇺🇸",
-        "site_name": "Romantic Couple Site",
-        "site_description": "A romantic site designed for couples",
+        "site_name": "Our Site",
+        "site_description": "A romantic site designed for us",
         "features": {
             "title": "Romantic Features",
             "fast": {
