@@ -29,35 +29,12 @@
                 <p class="subtitle">{{ lang.site_description }}</p>
                 <div class="cta-buttons">
                     <a href="{{ url_for('main.submit') }}" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
+                        <i class="fas fa-heart"></i>
                         {{ lang.buttons.get_started }}
                     </a>
                 </div>
             </div>
         </header>
-
-        <main>
-            <section id="features" class="features">
-                <h2>{{ lang.features.title }}</h2>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-bolt"></i>
-                        <h3>{{ lang.features.fast.title }}</h3>
-                        <p>{{ lang.features.fast.desc }}</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>{{ lang.features.secure.title }}</h3>
-                        <p>{{ lang.features.secure.desc }}</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>{{ lang.features.responsive.title }}</h3>
-                        <p>{{ lang.features.responsive.desc }}</p>
-                    </div>
-                </div>
-            </section>
-        </main>
     </div>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>

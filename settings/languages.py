@@ -3,16 +3,16 @@ LANGUAGES = {
     "zh": {
         "name": "简体中文",
         "flag": "🇨🇳",
-        "site_name": "现代 Flask 应用",
-        "site_description": "一个现代化的专业 Web 应用程序",
+        "site_name": "浪漫情侣网站",
+        "site_description": "一个专为情侣设计的浪漫网站",
         "features": {
-            "title": "核心特性",
+            "title": "浪漫特性",
             "fast": {"title": "快速可靠", "desc": "采用现代技术栈，提供闪电般的性能"},
             "secure": {"title": "安全防护", "desc": "采用安全最佳实践构建"},
             "responsive": {"title": "响应式设计", "desc": "完美适配所有设备"},
         },
         "buttons": {
-            "get_started": "开始使用",
+            "get_started": "开始浪漫之旅",
             "learn_more": "了解更多",
             "submit": "提交",
             "reset": "重置",
@@ -31,10 +31,10 @@ LANGUAGES = {
     "en": {
         "name": "English",
         "flag": "🇺🇸",
-        "site_name": "Modern Flask App",
-        "site_description": "A modern and professional web application",
+        "site_name": "Romantic Couple Site",
+        "site_description": "A romantic site designed for couples",
         "features": {
-            "title": "Key Features",
+            "title": "Romantic Features",
             "fast": {
                 "title": "Fast & Reliable",
                 "desc": "Lightning fast performance with modern technology",
@@ -46,7 +46,7 @@ LANGUAGES = {
             },
         },
         "buttons": {
-            "get_started": "Get Started",
+            "get_started": "Start Your Romantic Journey",
             "learn_more": "Learn More",
             "submit": "Submit",
             "reset": "Reset",
