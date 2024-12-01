@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ lang.site_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/effects.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="language-switcher">
+                {% for code, l in languages.items() %}
+                <a href="{{ url_for('main.switch_language', lang=code) }}" 
+                   class="lang-link {% if current_lang == code %}active{% endif %}">
+                    <span class="flag">{{ l.flag }}</span>
+                    <span class="lang-name">{{ l.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-content">
+                <h1>{{ lang.site_name }}</h1>
+                <p class="subtitle">{{ lang.site_description }}</p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('main.submit') }}" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        {{ lang.buttons.get_started }}
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="features" class="features">
+                <h2>{{ lang.features.title }}</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>{{ lang.features.fast.title }}</h3>
+                        <p>{{ lang.features.fast.desc }}</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>{{ lang.features.secure.title }}</h3>
+                        <p>{{ lang.features.secure.desc }}</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>{{ lang.features.responsive.title }}</h3>
+                        <p>{{ lang.features.responsive.desc }}</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
