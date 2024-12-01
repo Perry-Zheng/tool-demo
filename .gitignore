@@ -163,3 +163,4 @@ cython_debug/
 .idea/*
 !/server/pid/
 !/server/logs/
+/server/pid/supervisord.pid
